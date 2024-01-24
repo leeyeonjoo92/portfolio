@@ -1,0 +1,137 @@
+:root {
+	--padding: 5vw;
+}
+
+/****************************
+* 헤더
+***************************/
+.logo {
+	width: 13vw;
+}
+.nav-wide {
+	display: none;
+}
+.nav-m {
+	display: block;
+}
+
+/* 햄버거 메뉴 */
+#nav-btn {
+	display: none;
+}
+#nav-btn + label {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	width: 3rem;
+	height: 3rem;
+}
+#nav-btn + label::before,
+#nav-btn + label::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 3rem;
+	height: 0.5rem;
+	background: #FFF;
+	z-index: 999999;
+	transition: 0.3s;
+}
+#nav-btn + label::before {
+	top: calc(50% - 0.25rem - 0.5rem);
+	transform-origin: 25% 50%;
+}
+#nav-btn + label::after {
+	top: calc(50% - 0.25rem + 0.5rem);
+	transform-origin: 25% 50%;
+}
+
+/* 메뉴 */
+.nav-bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	z-index: -1;
+	transition: 0.5s;
+	transform: translateX(120%);
+}
+.nav-m ul {
+	position: fixed;
+	left: 150%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	line-height: 2;
+	font-size: 9vw;
+	transition: 0.5s;
+}
+
+/* 햄버거 메뉴 클릭시 */
+#nav-btn:checked + label {
+	mix-blend-mode: exclusion;
+}
+#nav-btn:checked + label::before {
+	transform: rotate(45deg);
+}
+#nav-btn:checked + label::after {
+	transform: rotate(-45deg);
+}
+#nav-btn:checked + label + .nav-bg {
+	transform: translateX(0);
+}
+#nav-btn:checked + label + .nav-bg + ul {
+	left: 50%;
+}
+
+/****************************
+* 인트로
+***************************/
+.intro {
+	padding: 0;
+	width: 80%;
+	margin: 0 10%;
+}
+
+/****************************
+* 강점
+***************************/
+.tool .sub-con > div {
+	width: 16%;
+	margin-right: 4.5%;
+	float: left;
+}
+.photoshop, .illust {
+	/* margin-top: 15%; */
+	padding: 27% 0;
+}
+
+
+/****************************
+* 프로젝트
+***************************/
+.project-pin {
+	padding: 8rem calc(var(--padding) * 4);
+}
+.project-pin div:nth-of-type(2) {
+	right: calc(var(--padding) * 4);
+}
+.project-pin div:nth-of-type(3) {
+	left: calc(var(--padding) * 4);
+}
+
+/* 프로젝트 목록 */
+.project .con-left {
+	padding: 7% 5%;
+}
+
+/* 프로젝트 상세내용 */
+.project-detail .img-wrap {
+	height: 25%;
+}
+
+.dental-page {
+	top: 0 !important;
+}

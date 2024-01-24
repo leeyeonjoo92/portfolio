@@ -1,0 +1,585 @@
+/*************************************************************
+        woff2 -> woff -> opentype -> truetype 순으로 작성
+ ************************************************************/
+
+/* Pretendard 폰트 (한글-고딕) */
+@font-face {
+	font-family: 'Pretendard-Thin';
+	src: url("/portfolio/font/Pretendard-Thin.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-ExtraLight';
+	src: url("/portfolio/font/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-Light';
+	src: url("/portfolio/font/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard';
+	src: url("/portfolio/font/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-SemiBold';
+	src: url("/portfolio/font/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-Bold';
+	src: url("/portfolio/font/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-Medium';
+	src: url("/portfolio/font/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-ExtraBold';
+	src: url("/portfolio/font/Pretendard-ExtraBold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Pretendard-Black';
+	src: url("/portfolio/font/Pretendard-Black.woff") format("woff");
+}
+
+/* 가나초콜릿체 (제목-명조) */
+@font-face {
+	font-family: 'Ghana';
+	src: url("/portfolio/font/Ghanachocolate.otf") format("opentype");
+}
+
+/* 가나초콜릿체 (제목-명조) */
+@font-face {
+	font-family: 'Puradak';
+	src: url("/portfolio/font/Puradak Gentle Gothic OTF.otf") format("opentype");
+}
+
+/* 빛의계승자 폰트 (제목-명조) */
+@font-face {
+	font-family: 'HeiroLight';
+	src: url("/portfolio/font/HeirofLightOTFRegular.otf") format("opentype");
+}
+@font-face {
+	font-family: 'HeiroLight-Bold';
+	src: url("/portfolio/font/HeirofLightOTFBold.otf") format("opentype");
+}
+
+/* 함박눈체 (제목-명조) */
+@font-face {
+	font-family: 'Snow';
+	src: url("/portfolio/font/SF함박눈TTF.ttf") format("truetype");
+}
+
+/* 봄바람체 (제목-명조) */
+@font-face {
+	font-family: 'Bombaram';
+	src: url("/portfolio/font/HSBombaram2.1.ttf") format("truetype");
+}
+
+html {
+	font-family: 'Pretendard';
+	font-size: 62.5%;
+	line-height: 1.285;
+	width: 100%;
+	overflow-x: hidden;
+}
+html * {
+	vertical-align: middle;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 11px;
+}
+body::-webkit-scrollbar-thumb {
+	height: 20%;
+	background: #ff6c3a;
+	border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+main {
+	width: 100%;
+}
+section {
+	width: 100%;
+}
+a {
+	color: #000;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	color: #000;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+h1 {
+	color: #FFF;
+}
+
+/* 애니메이션 */
+@keyframes show {
+	0% {transform: translateY(100%); opacity: 0;}
+	100% {transform: translateY(0); opacity: 1;}
+}
+
+
+/****************************
+ * 헤더
+ ***************************/
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+header::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/* background: rgba(255, 255, 255, 1); */
+	z-index: -1;
+	transition: 0.3s;
+}
+.header-con {
+	margin: 2rem 0;
+	/* padding: 0 4rem; */
+	padding: 0 3rem;
+}
+
+/* 로고 */
+.logo {
+	display: inline-block;
+	width: 8vw;
+	margin-right: 2rem;
+}
+
+/* 메뉴 */
+.nav-m {
+	display: none;
+}
+
+.nav-wide {
+	display: inline-block;
+	font-size: 2.4rem;
+	overflow: hidden;
+}
+.nav-wide li {
+	display: inline-block;
+	padding: 0 1.5rem;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+/* 헤더 숨기기 */
+header.hide::after {
+	transform: translateY(-100%);
+}
+header.hide .nav-wide li {
+	transform: translateY(-100%);
+}
+
+/****************************
+ * 메인
+ ***************************/
+/* 좌우여백 변수 */
+:root {
+	--padding: 20rem;
+	--padding: 11vw;
+}
+
+main section {
+	margin-top: 10rem;
+	font-size: 2rem;
+	line-height: 1.8;
+}
+
+h1 {
+	font-size: 5rem;
+	margin: 3rem 0 15rem;
+}
+h2 {
+	font-size: 2.5rem;
+}
+
+ /****************************
+ * 인트로
+ ***************************/
+.intro {
+	padding: 0 32rem;
+	margin-top: 0;
+	height: 100vh;
+}
+
+.intro .img-wrap {
+	overflow: hidden;
+}
+.intro .img-wrap div {
+	transform: translateY(100%);
+	opacity: 0;
+	animation: show 0.5s 0.5s both;
+}
+.intro .img-wrap:nth-of-type(2) div {
+	animation-delay: 1s;
+}
+
+ /****************************
+ * 소개
+ ***************************/
+.con {
+	width: 100%;
+	overflow: hidden;
+}
+.sub-con {
+	text-align: center;
+}
+
+.about {
+	padding: 8rem 0;
+}
+.about h1 {
+	margin-left: var(--padding);
+}
+.about .con {
+	background: #FFF;
+	border-radius: 2rem;
+	padding: 3.5%;
+}
+.ment {
+	margin-bottom: 5rem;
+}
+
+/* 경력 */
+.about .con:nth-of-type(1) {
+	margin: 0 var(--padding);
+	width: calc(100% - (var(--padding) * 2));
+}
+.history .sub-con, .license .sub-con {
+	text-align: left;
+}
+
+/* 스킬 & 자격증 */
+.about .con:nth-of-type(2) {
+	background: transparent;
+	padding: 0;
+	border-radius: 0;
+	overflow: hidden;
+	margin: 15rem 0 15rem var(--padding);
+	width: calc(100% - var(--padding));
+}
+.tool, .license {
+	background: #FFF;
+	padding: 3.5%;
+	display: inline-block;
+	border-radius: 2rem;
+}
+
+/* 스킬 */
+.tool {
+	float: left;
+	width: 56%;
+}
+.tool .sub-con {
+	overflow: hidden;
+}
+.tool .sub-con > div {
+	width: 13%;
+	margin-right: 8%;
+	float: left;
+}
+.tool .sub-con > div:last-of-type {
+	margin-right: 0;
+}
+.photoshop, .illust {
+	/* margin-top: 15%; */
+	padding: 20% 0;
+}
+
+.tool img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.tool .sub-con > div > div {
+	height: 14%;
+	margin-bottom: 1rem;
+}
+
+
+/* 자격증 */
+.license {
+	float: right;
+	width: 40%;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* 강점 */
+.merit {
+	background: transparent !important;
+	margin: 0 2rem;
+	width: calc(100% - 4rem);
+	height: calc(100% - 2rem);
+	padding: 12rem 0 0 !important;
+}
+
+.merit-pin {
+	background: #FFF;
+	border-radius: 2rem;
+	padding: 3.5%;
+	height: 100%;
+}
+
+.merit-pin .sub-title {
+	margin-top: 0;
+}
+.merit .sub-con {
+	padding-left: 6%;
+}
+
+.merit .sub-con span {
+	font-family: 'Pretendard-SemiBold';
+	font-size: 2.5rem;
+	font-style: italic;
+}
+.merit .sub-con > div {
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	width: 28%;
+	vertical-align: text-top;
+}
+.merit .sub-con > div > div:nth-of-type(1) {
+	/* width: 60%; */
+	height: 40%;
+	/* margin: 10% 20%; */
+	margin: 10% 0;
+}
+.merit .sub-con > div > div:nth-of-type(1) > img {
+	width: auto;
+	height: 100%;
+}
+.merit .sub-con > div:nth-of-type(2) {
+	margin: 0 7%;
+}
+
+
+ /****************************
+ * 프로젝트
+ ***************************/
+.project-pin {
+	padding: 8rem var(--padding);
+	width: 100%;
+	height: calc(100vh - 10rem);
+	height: 100vh;
+	font-size: 19rem;
+	font-size: 10vw;
+	font-family: 'Pretendard-SemiBold';
+	color: #FFF;
+	/* margin-bottom: 20rem; */
+	line-height: initial;
+	overflow: hidden;
+	position: relative;
+}
+.project-pin div {
+	white-space: nowrap;
+}
+.project-pin div:nth-of-type(2) {
+	text-align: right;
+	position: absolute;
+	right: var(--padding);
+	top: 50%;
+}
+.project-pin div:nth-of-type(3) {
+	/* margin-top: 4rem; */
+	letter-spacing: -4px;
+	position: absolute;
+	left: var(--padding);
+	bottom: 8rem;
+}
+
+.project {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 300%;
+}
+
+.project .con {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* 프로젝트 목록 */
+.project .con-left {
+	width: 50%;
+	height: 100%;
+	padding: 7% 11%;
+	float: left;
+}
+.project .con-right {
+	width: 50%;
+	height: 100%;
+	padding: 7% 5%;
+	float: right;
+	background: #FFF;
+}
+.project-year {
+	margin: 0;
+	margin-bottom: 10%;
+}
+.project-type {
+	overflow: hidden;
+}
+.project-more {
+	width: 40%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	padding: 4%;
+	float: left;
+	cursor: pointer;
+}
+.project-more:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+/* .project-con1 .project-more {
+	width: 30%;
+	margin-right: 5%;
+}
+.project-con1 .project-more:nth-of-type(3n) {
+	margin-right: 0;
+} */
+
+.project-on {
+	/* border: 0.3vw dashed #FFF; */
+	border-radius: 1.5vw;
+	box-shadow: 0 0 0 0.3vw #FFF inset;
+}
+
+.project .con-left img {
+	width: 100%;
+	object-fit: contain;
+}
+.project-more .project-lyj img {
+	height: 100%;
+}
+
+/* 프로젝트 상세내용 */
+.project-detail {
+	display: none;
+	position: relative;
+}
+.project-con2 .project-detail {
+	display: block;
+}
+
+.project-detail .img-wrap {
+	width: auto;
+	height: 30%;
+	margin-bottom: 10%;
+}
+.project-detail img {
+	width: auto;
+	height: 100%;
+}
+.project-detail .project-lyj {
+	width: 30%;
+}
+.project-detail .project-lyj img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.project-txt {
+	overflow: hidden;
+	line-height: 2.5;
+}
+
+/* .project-txt-topic {
+	float: left;
+	font-family: 'Pretendard-SemiBold';
+	color: #fc8c48;
+	margin-right: 8%;
+} */
+/* .project-txt-topic div {
+	white-space: nowrap;
+} */
+.project-txt-sub {
+	float: left;
+}
+.site-link {
+	position: relative;
+	white-space: nowrap;
+}
+.site-link::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -0.5rem;
+	width: 100%;
+	height: 0.5rem;
+	background: #fc8c48;
+}
+
+.project-txt span {
+	font-family: 'Pretendard-SemiBold';
+	color: #fc8c48;
+	display: inline-block;
+	padding-right: 5%;
+	white-space: nowrap;
+}
+.project-txt span + div {
+	display: inline-block;
+}
+
+.project-txt-topic > div > div {
+	line-height: 1.5;
+	vertical-align: text-top;
+}
+
+.dental-page {
+	bottom: auto !important;
+	top: 18% !important;
+	left: auto !important;
+	right: 0;
+	width: auto !important;
+	color: #FFF !important;
+}
+.dental-page span {
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	background: #fc8c48;
+}
+
+ /****************************
+ * 푸터
+ ***************************/
+footer div {
+	font-size: 2rem;
+	text-align: center;
+	color: #FFF;
+	margin: 5rem 0 7rem;
+	margin: 4rem 0;
+}
