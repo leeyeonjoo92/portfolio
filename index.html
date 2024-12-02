@@ -1,456 +1,626 @@
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://leeyeonjoo92.github.io/portfolio/" />
-		<meta property="og:title" content="퍼블리셔 이연주 포트폴리오" />
-		<meta property="og:description" content="다양한 경험에 목마른 1년 4개월 경력의 퍼블리셔 이연주 입니다." />
-		<meta property="og:image" content="/portfolio/ogimg.png" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://leeyeonjoo92.github.io/portfolio/"
+    />
+    <meta property="og:title" content="퍼블리셔 이연주 포트폴리오" />
+    <meta
+      property="og:description"
+      content="다양한 경험에 목마른 1년 4개월 경력의 퍼블리셔 이연주 입니다."
+    />
+    <meta property="og:image" content="/portfolio/ogimg.png" />
 
-		<link rel="shortcut icon" type="image/x-icon" href="/portfolio/favicon.ico">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/portfolio/favicon.ico"
+    />
 
-		<!-- 1181px 이상 css -->
-		<link rel="stylesheet" href="/portfolio/css/default.css">
-		<!-- 가로모드 769px ~ 1180px 또는 가로모드 768px 이하 css -->
-		<link rel="stylesheet" media="all and (min-width:769px) and (max-width:1180px) and (orientation: landscape), all and (max-width:768px) and (orientation: landscape)" href="/portfolio/css/tab.css">
-		<!-- 세로모드 768px 이하 또는 세로모드 769px ~ 1180px 일때 css -->
-		<link rel="stylesheet" media="all and (max-width:768px) and (orientation: portrait), all and (min-width:769px) and (max-width:1180px) and (orientation: portrait)" href="/portfolio/css/mobile.css">
+    <!-- 1181px 이상 css -->
+    <link rel="stylesheet" href="/portfolio/css/default.css" />
+    <!-- 가로모드 769px ~ 1180px 또는 가로모드 768px 이하 css -->
+    <link
+      rel="stylesheet"
+      media="all and (min-width:769px) and (max-width:1180px) and (orientation: landscape), all and (max-width:768px) and (orientation: landscape)"
+      href="/portfolio/css/tab.css"
+    />
+    <!-- 세로모드 768px 이하 또는 세로모드 769px ~ 1180px 일때 css -->
+    <link
+      rel="stylesheet"
+      media="all and (max-width:768px) and (orientation: portrait), all and (min-width:769px) and (max-width:1180px) and (orientation: portrait)"
+      href="/portfolio/css/mobile.css"
+    />
 
-		<script type="text/javascript" src="/portfolio/js/pc.js"></script>
+    <script type="text/javascript" src="/portfolio/js/pc.js"></script>
 
-		<!-- 스크롤 CDN -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-		<!-- swiper CDN -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- 스크롤 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-		<title>포트폴리오</title>
-	</head>
+    <title>포트폴리오</title>
+  </head>
 
-	<body>
-		<!-- 헤더 -->
-		<header id="header">
-			<div class="header-con">
-				<a href="/" class="logo"><img src="/portfolio/img/logo.png"></a>
-				<!-- pc 메뉴 -->
-				<nav class="navi nav-wide">
-					<ul>
-						<li>소개</li>
-						<li>프로젝트</li>
-					</ul>
-				</nav>
-				<!-- tab & mobile 메뉴 -->
-				<nav class="navi nav-m">
-					<input type="checkbox" id="nav-btn">
-					<label for="nav-btn"></label>
-					<div class="nav-bg"></div>
-					<ul>
-						<li>소개</li>
-						<li>프로젝트</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+  <body>
+    <!-- 헤더 -->
+    <header id="header">
+      <div class="header-con">
+        <a href="/portfolio" class="logo"
+          ><img src="/portfolio/img/logo.png"
+        /></a>
+        <!-- pc 메뉴 -->
+        <nav class="navi nav-wide">
+          <ul>
+            <li>소개</li>
+            <li>프로젝트</li>
+          </ul>
+        </nav>
+        <!-- tab & mobile 메뉴 -->
+        <nav class="navi nav-m">
+          <input type="checkbox" id="nav-btn" />
+          <label for="nav-btn"></label>
+          <div class="nav-bg"></div>
+          <ul>
+            <li>소개</li>
+            <li>프로젝트</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-		<!-- 배경 효과 -->
-		<!-- https://codepen.io/kromakollision/pen/ParJEq -->
+    <!-- 배경 효과 -->
+    <!-- https://codepen.io/kromakollision/pen/ParJEq -->
 
-		<div class="bg-wrapper">
-			<div class="animated-gradient"></div>
-		</div>
+    <div class="bg-wrapper">
+      <div class="animated-gradient"></div>
+    </div>
 
-		<style>
-			.bg-wrapper { 
-				margin: 0; 
-				position: fixed;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				z-index: -1;
-			}
-			.animated-gradient{
-				display: block;
-				width: 100%;
-				height: 100vh;
-				transform: translate3d(0,0,0);
-				background-color: lightblue;
-				background-image: 
-					radial-gradient(ellipse at 75% 37%,   #fffe64 0, transparent 45%),
-					radial-gradient(ellipse at 120% 65%,  #ffe23a 0, transparent 45%),
-					radial-gradient(ellipse at -29% -11%, #ffc83a 0, transparent 45%),
-					radial-gradient(ellipse at -65% 35%,  #ffa03a 0, transparent 45%),
-					linear-gradient(90deg, #ff7f3a 0%, #ff6c3a 100%);
-				background-size: 
-					125% 200%,
-					100% 100%,
-					100% 100%, 
-					100% 100%, 
-					100% 100%;
-				animation: glow 5s infinite;
-				animation-delay: .8s;
-				animation-direction: alternate;
-				animation-timing-function: ease-in-out;
-			}
+    <style>
+      .bg-wrapper {
+        margin: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .animated-gradient {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        transform: translate3d(0, 0, 0);
+        background-color: lightblue;
+        background-image: radial-gradient(
+            ellipse at 75% 37%,
+            #fffe64 0,
+            transparent 45%
+          ),
+          radial-gradient(ellipse at 120% 65%, #ffe23a 0, transparent 45%),
+          radial-gradient(ellipse at -29% -11%, #ffc83a 0, transparent 45%),
+          radial-gradient(ellipse at -65% 35%, #ffa03a 0, transparent 45%),
+          linear-gradient(90deg, #ff7f3a 0%, #ff6c3a 100%);
+        background-size: 125% 200%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+        animation: glow 5s infinite;
+        animation-delay: 0.8s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+      }
 
-			@keyframes glow{
-				0%{
-					background-size:
-						125% 200%,
-						100% 100%,
-						100% 100%, 
-						100% 100%, 
-						100% 100%;
-				}
-				40%{
-					background-size:
-						300% 300%,
-						100% 75%,
-						100% 100%, 
-						110% 80%, 
-						100% 100%;
-				}
-				60%{
-					background-size:
-						200% 200%,
-						100% 100%,
-						100% 100%, 
-						100% 100%, 
-						100% 100%;
-				}
-				100%{
-					background-size:
-						100% 175%,
-						150% 150%,
-						125% 125%, 
-						110% 110%, 
-						100% 100%;
-				}
-			}
-		</style>
+      @keyframes glow {
+        0% {
+          background-size: 125% 200%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+        }
+        40% {
+          background-size: 300% 300%, 100% 75%, 100% 100%, 110% 80%, 100% 100%;
+        }
+        60% {
+          background-size: 200% 200%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+        }
+        100% {
+          background-size: 100% 175%, 150% 150%, 125% 125%, 110% 110%, 100% 100%;
+        }
+      }
+    </style>
 
-		<!-- 메인 -->
-		<main>
-			<!-- 인트로 -->
-			<section class="intro">
-				<!-- <?php include("./svg/intro.html"); ?> -->
-				<div class="img-wrap"><div><img src="./img/welcome.png"></div></div>
-				<div class="img-wrap"><div><img src="./img/mypage.png"></div></div>
-			</section>
+    <!-- 메인 -->
+    <main>
+      <!-- 인트로 -->
+      <section class="intro">
+        <!-- <?php include("./svg/intro.html"); ?> -->
+        <div class="img-wrap">
+          <div><img src="./img/welcome.png" /></div>
+        </div>
+        <div class="img-wrap">
+          <div><img src="./img/mypage.png" /></div>
+        </div>
+      </section>
 
-			<!-- 소개 -->
-			<section class="about">
-				<h1 class="title show-right">About</h1>
-				<div class="con-wrap">
-					<div class="con show-up">
-						<ul class="ment">
-							<li>
-								안녕하세요. 다양한 경험에 목마른 1년 8개월차 퍼블리셔 이연주 입니다.
-							</li>
-							<li>
-								'두루두루 고와라' 라는 이름의 뜻처럼 다양한 방면에서 실력을 발휘할 수 있는 인재로 성장해나가겠습니다.
-							</li>
-						</ul>
-						<!-- 경력 -->
-						<div class="history">
-							<h2 class="sub-title">경력</h2>
-							<div class="sub-con">
-								<div>2021.12 ~ 2023.04 기적기획 퍼블리셔</div>
-								<div>2021.05 ~ 2021.09 더조은컴퓨터아트학원 (디지털디자인)웹디자인(웹퍼블리셔) 프론트앤드(스마트혼합) 수료</div>
-							</div>
-						</div>
-					</div>
-					<div class="con">
-						<!-- 사용툴 -->
-						<div class="tool show-right">
-							<h2 class="sub-title">사용툴</h2>
-							<div class="sub-con">
-								<div>
-									<div><img src="/portfolio/img/html.png"></div>
-									<!-- <span>HTML 00%</span> -->
-									<span>HTML</span>
-								</div>
-								<div>
-									<div><img src="/portfolio/img/css.png"></div>
-									<!-- <span>CSS 00%</span> -->
-									<span>CSS</span>
-								</div>
-								<div>
-									<div><img src="/portfolio/img/javascript.png"></div>
-									<!-- <span>Javascript 00%</span> -->
-									<span>Javascript</span>
-								</div>
-								<div>
-									<div class="photoshop"><img src="/portfolio/img/photoshop.png"></div>
-									<!-- <span>Photoshop 00%</span> -->
-									<span>Photoshop</span>
-								</div>
-								<div>
-									<div class="illust"><img src="/portfolio/img/illustrator.png"></div>
-									<!-- <span>Illustrator 00%</span> -->
-									<span>Illustrator</span>
-								</div>
-							</div>
-						</div>
-						<!-- 자격증 -->
-						<div class="license about-left">
-							<h2 class="sub-title">자격증</h2>
-							<ul class="sub-con">
-								<li>2015.08 (국가공인) GTQ 1급</li>
-								<li>2015.04 (국가공인) ITQ 아래한글</li>
-								<li>2014.12 (국가공인) ITQ 한글엑셀</li>
-								<li>2013.06 (국가공인) ITQ 한글파워포인트</li>
-							</ul>
-							<!-- <ul class="sub-con">
-								<li>2013.06 한국생산성본부</li>
-								<li>(국가공인)ITQ 한글파워포인트</li>
-								<li>2014.12 한국생산성본부</li>
-								<li>(국가공인)ITQ 한글엑셀</li>
-								<li>2015.04 한국생산성본부</li>
-								<li>(국가공인)ITQ 아래한글</li>
-								<li>2015.08 한국생산성본부</li>
-								<li>(국가공인)GTQ 1급</li>
-							</ul> -->
-						</div>
-					</div>
-					<div class="con merit">
-						<div class="merit-pin">
-							<!-- 강점 -->
-							<h2 class="sub-title">강점</h2>
-							<div class="sub-con">
-								<div class="merit1">
-									<span>꼼꼼합니다!</span>
-									<div><img src="/portfolio/img/search.png"></div>
-									<div>업무 시작 전 체크리스트를 작성하여 우선순위를 정리하고 빠트리는 일 없이 확인하며 작업합니다</div>
-								</div>
-								<div class="merit2">
-									<span>끈기가 있습니다!</span>
-									<div><img src="/portfolio/img/fighting.png"></div>
-									<div>원하는 효과를 구현하기 위하여 끝까지 포기하지 않습니다</div>
-								</div>
-								<div class="merit3">
-									<span>습득이 빠른편입니다!</span>
-									<div><img src="/portfolio/img/book.png"></div>
-									<div>한 번 배울때 잘 잊어버리지 않으며, 메모하는 습관으로 같은 질문을 다시 하지 않습니다</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- 소개 -->
+      <section class="about">
+        <h1 class="title show-right">About</h1>
+        <div class="con-wrap">
+          <div class="con show-up">
+            <ul class="ment">
+              <li>
+                안녕하세요. 다양한 경험에 목마른 1년 4개월 경력의 퍼블리셔
+                이연주 입니다.
+              </li>
+              <li>
+                '두루두루 고와라' 라는 이름의 뜻처럼 다양한 방면에서 실력을
+                발휘할 수 있는 인재로 성장해나가겠습니다.
+              </li>
+            </ul>
+            <!-- 경력 -->
+            <div class="history">
+              <h2 class="sub-title">경력</h2>
+              <div class="sub-con">
+                <div>2021.12 ~ 2023.04 기적기획 퍼블리셔</div>
+                <div>
+                  2021.05 ~ 2021.09 더조은컴퓨터아트학원
+                  (디지털디자인)웹디자인(웹퍼블리셔) 프론트앤드(스마트혼합) 수료
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="con">
+            <!-- 사용툴 -->
+            <div class="tool show-right">
+              <h2 class="sub-title">사용툴</h2>
+              <div class="sub-con">
+                <div>
+                  <div><img src="/portfolio/img/html.png" /></div>
+                  <!-- <span>HTML 00%</span> -->
+                  <span>HTML</span>
+                </div>
+                <div>
+                  <div><img src="/portfolio/img/css.png" /></div>
+                  <!-- <span>CSS 00%</span> -->
+                  <span>CSS</span>
+                </div>
+                <div>
+                  <div><img src="/portfolio/img/javascript.png" /></div>
+                  <!-- <span>Javascript 00%</span> -->
+                  <span>Javascript</span>
+                </div>
+                <div>
+                  <div class="photoshop">
+                    <img src="/portfolio/img/photoshop.png" />
+                  </div>
+                  <!-- <span>Photoshop 00%</span> -->
+                  <span>Photoshop</span>
+                </div>
+                <div>
+                  <div class="illust">
+                    <img src="/portfolio/img/illustrator.png" />
+                  </div>
+                  <!-- <span>Illustrator 00%</span> -->
+                  <span>Illustrator</span>
+                </div>
+              </div>
+            </div>
+            <!-- 자격증 -->
+            <div class="license about-left">
+              <h2 class="sub-title">자격증</h2>
+              <ul class="sub-con">
+                <li>2015.08 (국가공인) GTQ 1급</li>
+                <li>2015.04 (국가공인) ITQ 아래한글</li>
+                <li>2014.12 (국가공인) ITQ 한글엑셀</li>
+                <li>2013.06 (국가공인) ITQ 한글파워포인트</li>
+              </ul>
+            </div>
+          </div>
+          <div class="con merit">
+            <div class="merit-pin">
+              <!-- 강점 -->
+              <h2 class="sub-title">강점</h2>
+              <div class="sub-con">
+                <div class="merit1">
+                  <span>꼼꼼합니다!</span>
+                  <div><img src="/portfolio/img/search.png" /></div>
+                  <div>
+                    업무 시작 전 체크리스트를 작성하여 우선순위를 정리하고
+                    빠트리는 일 없이 확인하며 작업합니다
+                  </div>
+                </div>
+                <div class="merit2">
+                  <span>끈기가 있습니다!</span>
+                  <div><img src="/portfolio/img/fighting.png" /></div>
+                  <div>
+                    원하는 효과를 구현하기 위하여 끝까지 포기하지 않습니다
+                  </div>
+                </div>
+                <div class="merit3">
+                  <span>습득이 빠른편입니다!</span>
+                  <div><img src="/portfolio/img/book.png" /></div>
+                  <div>
+                    한 번 배울때 잘 잊어버리지 않으며, 메모하는 습관으로 같은
+                    질문을 다시 하지 않습니다
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- 프로젝트 -->
-			<section class="project-intro">
-				<div class="project-pin">
-					<div>Projects</div>
-					<div>프로젝트</div>
-					<div>2021 - 2023</div>
-				</div>
-			</section>
+      <!-- 프로젝트 -->
+      <section class="project-intro">
+        <div class="project-pin">
+          <div>Projects</div>
+          <div>프로젝트</div>
+          <div>2021 - 2023</div>
+        </div>
+      </section>
 
-			<section class="project" id="project">
-				<!-- 2023 -->
-				<div class="con project-con1">
-					<div class="con-left">
-						<h1 class="project-year">2023</h1>
-						<div class="project-type">
-							<div class="project-more">
-								<div class="img-wrap"><img src="/portfolio/img/sales.png"></div>
-							</div>
-							<div class="project-more">
-								<div class="img-wrap project-lyj"><img src="/portfolio/img/logo.png"></div>
-							</div>
-							<div class="project-more">
-								<div class="img-wrap project-miracle"><img src="/portfolio/img/miracle.png"></div>
-							</div>
-							<div class="project-more">
-								<div class="img-wrap"><img src="/portfolio/img/clean-tooth.png"></div>
-							</div>
-						</div>
-					</div>
-					<div class="con-right">
-						<!-- 금융서비스 -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/sales.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="http://www.더금융서비스대리점.com" target="_blank" class="site-link">금융서비스</a></div>
-									<div><span>프로젝트 기간 : </span>23.09</div>
-									<div><span>퍼블리싱 기여도 : </span>100%</div>
-									<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, Swiper</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 개인포폴 -->
-						<div class="project-detail">
-							<div class="img-wrap project-lyj"><img src="/portfolio/img/logo.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="/" target="_blank" class="site-link">개인 포트폴리오 홈페이지</a></div>
-									<div><span>프로젝트 기간 : </span>23.08~23.09</div>
-									<div><span>퍼블리싱 기여도 : </span>100%</div>
-									<div><span>프로젝트 종류 : </span>반응형 웹</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, GSAP ScrollTrigger, Swiper</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 기적 리뉴얼 -->
-						<div class="project-detail">
-							<div class="img-wrap project-miracle"><img src="/portfolio/img/miracle.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="https://www.mmcmso.com" target="_blank" class="site-link">회사 홈페이지 리뉴얼</a></div>
-									<div><span>프로젝트 기간 : </span>22.08~23.04</div>
-									<div><span>퍼블리싱 기여도 : </span><div>80% (서비스 페이지 제외)</div></div>
-									<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, ScrollMagic, GSAP,  Swiper, OverlayScrollbars, Magnific Popup</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 치과 (원더플란트, 구미숙면치과) -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/clean-tooth.png"></div>
-							<div class="swiper-pagination dental-page"></div>
-							<div class="project-txt dental">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="project-txt-topic">
-											<div><span>프로젝트명 : </span><a href="http://wonderplant.kr" target="_blank" class="site-link">치과 홈페이지 리뉴얼</a></div>
-											<div><span>프로젝트 기간 : </span>22.12~23.04</div>
-											<div><span>퍼블리싱 기여도 : </span>100%</div>
-											<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-											<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div></div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="project-txt-topic">
-											<div><span>프로젝트명 : </span><a href="http://www.gumismdc.com" target="_blank" class="site-link">치과 홈페이지</a></div>
-											<div><span>프로젝트 기간 : </span>22.11~23.01</div>
-											<div><span>퍼블리싱 기여도 : </span>100%</div>
-											<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-											<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 2022 -->
-				<div class="con project-con2">
-					<div class="con-left">
-						<h1 class="project-year">2022</h1>
-						<div class="project-type">
-							<div class="img-wrap project-more project-on"><img src="/portfolio/img/clean-tooth.png"></div>
-						</div>
-					</div>
-					<div class="con-right">
-						<!-- 치과 (신촌다인치과, 서울숙면치과) -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/clean-tooth.png"></div>
-							<div class="swiper-pagination dental-page"></div>
-							<div class="project-txt dental">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="project-txt-topic">
-											<div><span>프로젝트명 : </span><a href="http://www.ysdain.com" target="_blank" class="site-link">치과 홈페이지</a></div>
-											<div><span>프로젝트 기간 : </span>22.04~22.05</div>
-											<div><span>퍼블리싱 기여도 : </span>100%</div>
-											<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-											<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div></div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="project-txt-topic">
-											<div><span>프로젝트명 : </span><a href="http://www.seoulsmdc.com" target="_blank" class="site-link">치과 홈페이지</a></div>
-											<div><span>프로젝트 기간 : </span>22.01~22.03</div>
-											<div><span>퍼블리싱 기여도 : </span>100%</div>
-											<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-											<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 2021 -->
-				<div class="con project-con3">
-					<div class="con-left">
-						<h1 class="project-year">2021</h1>
-						<div class="project-type">
-							<div class="img-wrap project-more"><img src="/portfolio/img/clean-tooth.png"></div>
-							<div class="img-wrap project-more"><img src="/portfolio/img/pizza.png"></div>
-							<div class="img-wrap project-more"><img src="/portfolio/img/nail-art.png"></div>
-							<div class="img-wrap project-more"><img src="/portfolio/img/gallery.png"></div>
-						</div>
-					</div>
-					<div class="con-right">
-						<!-- 치과 (숙면플란트치과) -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/clean-tooth.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="http://www.seoulsmdental.com" target="_blank" class="site-link">치과 홈페이지</a></div>
-									<div><span>프로젝트 기간 : </span>21.12</div>
-									<div><span>퍼블리싱 기여도 : </span>100%</div>
-									<div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 개인 데모사이트 (청년피자) -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/pizza.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="http://pizza.joo.popol.website" target="_blank" class="site-link">개인 데모사이트 - 청년피자</a></div>
-									<div><span>프로젝트 기간 : </span>21.10</div>
-									<div><span>퍼블리싱 기여도 : </span>100%</div>
-									<div><span>프로젝트 종류 : </span>반응형 웹</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 개인 데모사이트 (젤라또팩토리-젤리믹스) -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/nail-art.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="http://nail.joo.popol.website" target="_blank" class="site-link">개인 데모사이트 - 젤리믹스</a></div>
-									<div><span>프로젝트 기간 : </span>21.08~21.09</div>
-									<div><span>퍼블리싱 기여도 : </span>100%</div>
-									<div><span>프로젝트 종류 : </span>반응형 웹</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript</div></div>
-								</div>
-							</div>
-						</div>
-						<!-- 포트폴리오 갤러리 -->
-						<div class="project-detail">
-							<div class="img-wrap"><img src="/portfolio/img/gallery.png"></div>
-							<div class="project-txt">
-								<div class="project-txt-topic">
-									<div><span>프로젝트명 : </span><a href="http://joo.popol.website" target="_blank" class="site-link">개인 포트폴리오</a></div>
-									<div><span>프로젝트 기간 : </span>21.07~21.08</div>
-									<div><span>퍼블리싱 기여도 : </span><div>50% (교육 중 선생님 도움으로 작업)</div></div>
-									<div><span>프로젝트 종류 : </span>반응형 웹</div>
-									<div><span>사용 툴 : </span><div>HTML, CSS, Javascript</div></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+      <section class="project" id="project">
+        <!-- 2023 -->
+        <div class="con project-con1">
+          <div class="con-left">
+            <h1 class="project-year">2023</h1>
+            <div class="project-type">
+              <div class="project-more">
+                <div class="img-wrap">
+                  <img src="/portfolio/img/sales.png" />
+                </div>
+              </div>
+              <div class="project-more">
+                <div class="img-wrap project-lyj">
+                  <img src="/portfolio/img/logo.png" />
+                </div>
+              </div>
+              <div class="project-more">
+                <div class="img-wrap project-miracle">
+                  <img src="/portfolio/img/miracle.png" />
+                </div>
+              </div>
+              <div class="project-more">
+                <div class="img-wrap">
+                  <img src="/portfolio/img/clean-tooth.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="con-right">
+            <!-- 금융서비스 -->
+            <div class="project-detail">
+              <div class="img-wrap"><img src="/portfolio/img/sales.png" /></div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span>
+                    <span class="site-link">금융서비스</span>
+                  </div>
+                  <div><span>프로젝트 기간 : </span>23.09</div>
+                  <div><span>퍼블리싱 기여도 : </span>100%</div>
+                  <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript, Swiper</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 개인포폴 -->
+            <div class="project-detail">
+              <div class="img-wrap project-lyj">
+                <img src="/portfolio/img/logo.png" />
+              </div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><a href="/portfolio" target="_blank" class="site-link"
+                      >개인 포트폴리오 홈페이지</a
+                    >
+                  </div>
+                  <div><span>프로젝트 기간 : </span>23.08~23.09</div>
+                  <div><span>퍼블리싱 기여도 : </span>100%</div>
+                  <div><span>프로젝트 종류 : </span>반응형 웹</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript, GSAP ScrollTrigger, Swiper</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 기적 리뉴얼 -->
+            <div class="project-detail">
+              <div class="img-wrap project-miracle">
+                <img src="/portfolio/img/miracle.png" />
+              </div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><span class="site-link">회사 홈페이지 리뉴얼</span>
+                  </div>
+                  <div><span>프로젝트 기간 : </span>22.08~23.04</div>
+                  <div>
+                    <span>퍼블리싱 기여도 : </span>
+                    <div>80% (서비스 페이지 제외)</div>
+                  </div>
+                  <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>
+                      HTML, CSS, Javascript, jQuery, 그누보드, ScrollMagic,
+                      GSAP, Swiper, OverlayScrollbars, Magnific Popup
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 치과 (원더플란트, 구미숙면치과) -->
+            <div class="project-detail">
+              <div class="img-wrap">
+                <img src="/portfolio/img/clean-tooth.png" />
+              </div>
+              <div class="swiper-pagination dental-page"></div>
+              <div class="project-txt dental">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="project-txt-topic">
+                      <div>
+                        <span>프로젝트명 : </span
+                        ><a
+                          href="http://wonderplant.kr"
+                          target="_blank"
+                          class="site-link"
+                          >치과 홈페이지 리뉴얼</a
+                        >
+                      </div>
+                      <div><span>프로젝트 기간 : </span>22.12~23.04</div>
+                      <div><span>퍼블리싱 기여도 : </span>100%</div>
+                      <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                      <div>
+                        <span>사용 툴 : </span>
+                        <div>
+                          HTML, CSS, Javascript, jQuery, 그누보드, Swiper
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-txt-topic">
+                      <div>
+                        <span>프로젝트명 : </span
+                        ><a
+                          href="http://www.gumismdc.com"
+                          target="_blank"
+                          class="site-link"
+                          >치과 홈페이지</a
+                        >
+                      </div>
+                      <div><span>프로젝트 기간 : </span>22.11~23.01</div>
+                      <div><span>퍼블리싱 기여도 : </span>100%</div>
+                      <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                      <div>
+                        <span>사용 툴 : </span>
+                        <div>
+                          HTML, CSS, Javascript, jQuery, 그누보드, Swiper
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2022 -->
+        <div class="con project-con2">
+          <div class="con-left">
+            <h1 class="project-year">2022</h1>
+            <div class="project-type">
+              <div class="img-wrap project-more project-on">
+                <img src="/portfolio/img/clean-tooth.png" />
+              </div>
+            </div>
+          </div>
+          <div class="con-right">
+            <!-- 치과 (신촌다인치과, 서울숙면치과) -->
+            <div class="project-detail">
+              <div class="img-wrap">
+                <img src="/portfolio/img/clean-tooth.png" />
+              </div>
+              <div class="swiper-pagination dental-page"></div>
+              <div class="project-txt dental">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="project-txt-topic">
+                      <div>
+                        <span>프로젝트명 : </span
+                        ><a
+                          href="http://www.ysdain.com"
+                          target="_blank"
+                          class="site-link"
+                          >치과 홈페이지</a
+                        >
+                      </div>
+                      <div><span>프로젝트 기간 : </span>22.04~22.05</div>
+                      <div><span>퍼블리싱 기여도 : </span>100%</div>
+                      <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                      <div>
+                        <span>사용 툴 : </span>
+                        <div>
+                          HTML, CSS, Javascript, jQuery, 그누보드, Swiper
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-txt-topic">
+                      <div>
+                        <span>프로젝트명 : </span
+                        ><a
+                          href="http://www.seoulsmdc.com"
+                          target="_blank"
+                          class="site-link"
+                          >치과 홈페이지</a
+                        >
+                      </div>
+                      <div><span>프로젝트 기간 : </span>22.01~22.03</div>
+                      <div><span>퍼블리싱 기여도 : </span>100%</div>
+                      <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                      <div>
+                        <span>사용 툴 : </span>
+                        <div>
+                          HTML, CSS, Javascript, jQuery, 그누보드, Swiper
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2021 -->
+        <div class="con project-con3">
+          <div class="con-left">
+            <h1 class="project-year">2021</h1>
+            <div class="project-type">
+              <div class="img-wrap project-more">
+                <img src="/portfolio/img/clean-tooth.png" />
+              </div>
+              <div class="img-wrap project-more">
+                <img src="/portfolio/img/pizza.png" />
+              </div>
+              <div class="img-wrap project-more">
+                <img src="/portfolio/img/nail-art.png" />
+              </div>
+              <div class="img-wrap project-more">
+                <img src="/portfolio/img/gallery.png" />
+              </div>
+            </div>
+          </div>
+          <div class="con-right">
+            <!-- 치과 (숙면플란트치과) -->
+            <div class="project-detail">
+              <div class="img-wrap">
+                <img src="/portfolio/img/clean-tooth.png" />
+              </div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><a
+                      href="http://www.seoulsmdental.com"
+                      target="_blank"
+                      class="site-link"
+                      >치과 홈페이지</a
+                    >
+                  </div>
+                  <div><span>프로젝트 기간 : </span>21.12</div>
+                  <div><span>퍼블리싱 기여도 : </span>100%</div>
+                  <div><span>프로젝트 종류 : </span>적응형 웹 PC/M</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript, jQuery, 그누보드, Swiper</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 개인 데모사이트 (청년피자) -->
+            <div class="project-detail">
+              <div class="img-wrap"><img src="/portfolio/img/pizza.png" /></div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><a
+                      href="http://pizza.joo.popol.website"
+                      target="_blank"
+                      class="site-link"
+                      >개인 데모사이트 - 청년피자</a
+                    >
+                  </div>
+                  <div><span>프로젝트 기간 : </span>21.10</div>
+                  <div><span>퍼블리싱 기여도 : </span>100%</div>
+                  <div><span>프로젝트 종류 : </span>반응형 웹</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 개인 데모사이트 (젤라또팩토리-젤리믹스) -->
+            <div class="project-detail">
+              <div class="img-wrap">
+                <img src="/portfolio/img/nail-art.png" />
+              </div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><a
+                      href="http://nail.joo.popol.website"
+                      target="_blank"
+                      class="site-link"
+                      >개인 데모사이트 - 젤리믹스</a
+                    >
+                  </div>
+                  <div><span>프로젝트 기간 : </span>21.08~21.09</div>
+                  <div><span>퍼블리싱 기여도 : </span>100%</div>
+                  <div><span>프로젝트 종류 : </span>반응형 웹</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 포트폴리오 갤러리 -->
+            <div class="project-detail">
+              <div class="img-wrap">
+                <img src="/portfolio/img/gallery.png" />
+              </div>
+              <div class="project-txt">
+                <div class="project-txt-topic">
+                  <div>
+                    <span>프로젝트명 : </span
+                    ><a
+                      href="http://joo.popol.website"
+                      target="_blank"
+                      class="site-link"
+                      >개인 포트폴리오</a
+                    >
+                  </div>
+                  <div><span>프로젝트 기간 : </span>21.07~21.08</div>
+                  <div>
+                    <span>퍼블리싱 기여도 : </span>
+                    <div>50% (교육 중 선생님 도움으로 작업)</div>
+                  </div>
+                  <div><span>프로젝트 종류 : </span>반응형 웹</div>
+                  <div>
+                    <span>사용 툴 : </span>
+                    <div>HTML, CSS, Javascript</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<!-- 푸터 -->
-		<footer>
-			<div>
-				Copyrights &copy 2023, All rights reserved. 
-			</div>
-		</footer>
-	</body>
+    <!-- 푸터 -->
+    <footer>
+      <div>Copyrights &copy 2023, All rights reserved.</div>
+    </footer>
+  </body>
 </html>
